@@ -1,0 +1,30 @@
+html {
+    font-size: 100%; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+    box-sizing: border-box;
+  }
+  
+
+body {
+margin: 0 auto;
+max-width: 1000px;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+p {
+    color: blueviolet;
+    width: 500px;
+  }
+  
+
+
+//helper class
+.centered {
+    text-align: center;
+}
