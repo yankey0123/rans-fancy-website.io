@@ -20,3 +20,8 @@ $bg-color: #5928e5;
 .center {
     padding: 0 70px;
 }
+
+.notvisible {
+filter: brightness(0%);
+    // visibility: hidden;
+}

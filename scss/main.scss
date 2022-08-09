@@ -9,27 +9,31 @@ body {
 }
 
 h1 {
-    font-family: "Futura XBlk BT", sans-serif; 
+    font-family: "Futura XBlk BT", sans-serif;
 }
 
-// #5928e5
-// #ffd9d9
+
 
 header {
     height: 10vh;
-background: $bg-color;
+    background: $bg-color;
+
     nav {
         display: flex;
         justify-content: end;
 
+
         ul {
             display: flex;
+            margin-top: 1.5rem;
+
             li {
                 margin-left: 40px;
-                 a {
-                     font-size: 16px;
-                     
-                 }
+
+                a {
+                    font-size: 16px;
+
+                }
             }
         }
     }
@@ -37,41 +41,44 @@ background: $bg-color;
 
 main {
     width: 100%;
+
     .pageintrowrapper {
         background: $bg-color;
         overflow: hidden;
-position: relative;
-width: 100%;
+        position: relative;
+        width: 100%;
+
         h1 {
             font-size: 250px;
             color: white;
-            transform: translate(-100px, 100px);
-           
+            transform: translate(-90px, 100px);
+
         }
-       
+
 
         .mycontain {
             display: flex;
             max-width: 1161px;
-            
-            
 
-.para {
-    width: 477px;
-    position: relative;
-    margin-bottom: 50px;
-    z-index: 999;
 
-    p {
-        font-size: 16px;
-        color: hsla(0, 0, 100, 0.5);
-    }
 
-    .sub {
-font-size: 20px;
-color: white;
-    }
-}
+            .para {
+                width: 477px;
+                position: relative;
+                margin-bottom: 50px;
+                z-index: 999;
+
+                p {
+                    font-size: 16px;
+                    color: hsla(0, 0, 100, 0.5);
+                }
+
+                .sub {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
             img {
                 height: 43.75rem;
                 position: absolute;
@@ -91,12 +98,13 @@ color: white;
         justify-content: center;
 
         .featured-in {
+          
             position: absolute;
             margin-top: 60px;
             text-transform: uppercase;
             text-align: center;
             color: hsla(0, 0, 100, 0.5);
-
+transition:  filter 0.5s ease-out;
             p {
                 font-size: 12px;
                 margin-bottom: 4rem;
@@ -104,14 +112,15 @@ color: white;
 
             .container {
                 display: flex;
-                
+
                 img {
                     margin-right: 70px;
                 }
             }
         }
-        
+
     }
+
     .flux-academy-div {
         height: 170vh;
         background: black;
@@ -121,26 +130,27 @@ color: white;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         .img {
             background: $bg-color;
             overflow: hidden;
             display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        
-        width: 100px;
-        height: 100px;
-        margin-bottom: 70px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            width: 100px;
+            height: 100px;
+            margin-bottom: 70px;
+
             img {
                 width: 140px;
                 transform: translateY(14px);
             }
-            
+
         }
 
-        p{
+        p {
             font-family: "Futura-Bold";
             font-size: 70px;
             text-align: center;
@@ -156,11 +166,12 @@ footer {
     margin-top: -2rem;
     background: black;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-between;
+
     img {
-       
-       
+
+
         width: 41.25%;
     }
 
@@ -169,3 +180,4 @@ footer {
         margin-bottom: 70px;
     }
 }
+
