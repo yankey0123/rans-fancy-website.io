@@ -1,0 +1,22 @@
+// Screen breakpoints
+
+$breakpoints: (small: 699px,
+    medium: 700px,
+    large: 1000px,
+    xlarge: 1440px);
+
+@mixin Max($size) {
+    $value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+@mixin Min($size) {
+    $value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}

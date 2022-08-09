@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Futura Bold";
+    src: url(../assets/fonts/futura-bold.ttf);
+}
+@font-face {
+    font-family: "Futura-Md-BT";
+    src: url(../assets/fonts/futura-medium.ttf);
+}
+@font-face {
+    font-family: "Futura-XBlk-BT";
+    src: url(../assets/fonts/Futura-Extra-Black.ttf);
+}
+
+
+// colors
+$bg-color: #5928e5;
+
+
+//helperclass
+.center {
+    padding: 0 70px;
+}

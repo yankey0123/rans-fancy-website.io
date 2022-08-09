@@ -1,30 +1,171 @@
-html {
-    font-size: 100%; /* px means "pixels": the base font size is now 10 pixels high  */
-    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-    box-sizing: border-box;
-  }
-  
+@import 'reset';
+@import 'media-queries';
+@import 'library';
 
 body {
-margin: 0 auto;
-max-width: 1000px;
-
+    font-family: "Futura Md BT", sans-serif;
+    max-width: 1440px;
+    color: white;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-  }
-  
+h1 {
+    font-family: "Futura XBlk BT", sans-serif; 
+}
 
-p {
-    color: blueviolet;
-    width: 500px;
-  }
-  
+// #5928e5
+// #ffd9d9
 
+header {
+    height: 10vh;
+background: $bg-color;
+    nav {
+        display: flex;
+        justify-content: end;
 
-//helper class
-.centered {
-    text-align: center;
+        ul {
+            display: flex;
+            li {
+                margin-left: 40px;
+                 a {
+                     font-size: 16px;
+                     
+                 }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    .pageintrowrapper {
+        background: $bg-color;
+        overflow: hidden;
+position: relative;
+width: 100%;
+        h1 {
+            font-size: 250px;
+            color: white;
+            transform: translate(-100px, 100px);
+           
+        }
+       
+
+        .mycontain {
+            display: flex;
+            max-width: 1161px;
+            
+            
+
+.para {
+    width: 477px;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 999;
+
+    p {
+        font-size: 16px;
+        color: hsla(0, 0, 100, 0.5);
+    }
+
+    .sub {
+font-size: 20px;
+color: white;
+    }
+}
+            img {
+                height: 43.75rem;
+                position: absolute;
+                bottom: 0;
+                right: -10%;
+                transform: translate(0px, 14px);
+            }
+        }
+    }
+
+    .page-other {
+        height: 60vh;
+        background: black;
+        position: relative;
+        top: -16px;
+        display: flex;
+        justify-content: center;
+
+        .featured-in {
+            position: absolute;
+            margin-top: 60px;
+            text-transform: uppercase;
+            text-align: center;
+            color: hsla(0, 0, 100, 0.5);
+
+            p {
+                font-size: 12px;
+                margin-bottom: 4rem;
+            }
+
+            .container {
+                display: flex;
+                
+                img {
+                    margin-right: 70px;
+                }
+            }
+        }
+        
+    }
+    .flux-academy-div {
+        height: 170vh;
+        background: black;
+        position: relative;
+        top: -16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .img {
+            background: $bg-color;
+            overflow: hidden;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+        width: 100px;
+        height: 100px;
+        margin-bottom: 70px;
+            img {
+                width: 140px;
+                transform: translateY(14px);
+            }
+            
+        }
+
+        p{
+            font-family: "Futura-Bold";
+            font-size: 70px;
+            text-align: center;
+
+            span {
+                color: $bg-color;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: -2rem;
+    background: black;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    img {
+       
+       
+        width: 41.25%;
+    }
+
+    span {
+        margin-right: 70px;
+        margin-bottom: 70px;
+    }
 }
